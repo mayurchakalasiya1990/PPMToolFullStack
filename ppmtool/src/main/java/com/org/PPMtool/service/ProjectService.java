@@ -15,6 +15,7 @@ public class ProjectService {
     public Project saveOrUpdateProject(Project project){
         try {
             project.setProjectIdentifier(project.getProjectIdentifier().toUpperCase());
+            
             return projectRepository.save(project);
         }catch (Exception e){
             throw new ProjectIDException("Project Id '"+project.getProjectIdentifier()+"' already exist.");

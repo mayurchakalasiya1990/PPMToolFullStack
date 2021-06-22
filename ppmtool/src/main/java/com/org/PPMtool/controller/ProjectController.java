@@ -18,6 +18,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/project/")
 @AllArgsConstructor
+@CrossOrigin
 public class ProjectController {
 
     private final ProjectService projectService;
