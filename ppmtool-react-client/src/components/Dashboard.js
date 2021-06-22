@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Projectitem from './Project/Projectitem';
-import Header from './Layout/Header'
 import CreateProjectButton from './Project/CreateProjectButton';
 
 class Dashboard extends Component {
